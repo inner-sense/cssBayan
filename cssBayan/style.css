@@ -16,11 +16,28 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------*/
 
+
 body{
     max-height: 100vh;
+    background-color: #f7f7f7;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0px 0px 5px #a1a1a1;
+    background-color: #ffffff;
 }
 .main{
-    background-color: #f7f7f7;
+    color: #1f2fc0;
+    transition: 0.3s ease;
+}
+.main:hover{
+    color: #000000;
+    cursor: pointer;
+}
+.main:hover .section-title-icon{
+    display: block;
 }
 .main-title{
     padding: 0px 5px 20px;
@@ -28,27 +45,43 @@ body{
     font-weight: 700;
     border-bottom: 1px solid #888686;
 }
-.container {
-    max-width: 1400px;
-    padding: 40px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 5px #a1a1a1;
-}
+.container {}
 .main {}
+.bayan{
+    height: 70px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.bayan:hover{
+    height: 700px;
+}
+.bayan:hover .img{
+    display: block;
+}
+.bayan:hover .section-title-icon{
+    rotate: -45deg;
+}
 .first-bayan {
     padding: 0px 0px 20px;
     border-bottom: 1px solid #888686;
 }
 .section-title {
+    display: flex;
+    justify-content: space-between;
     padding: 20px 5px 30px;
     font-size: 25px;
     font-weight: 700;
 }
+.section-title:hover .section-title-icon{
+    rotate: -45deg;
+}
+.section-title-icon{
+    display: none;
+}
 .first-bayan-img {
-    display: block;
-    width: 700px;
+    display: none;
     margin: auto;
+    transition: all 1s ease;
 }
 .second-bayan {
     padding: 0px 0px 20px;
